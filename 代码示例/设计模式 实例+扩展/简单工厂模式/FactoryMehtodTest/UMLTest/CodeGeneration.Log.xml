@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="代码生成/文本转换记录">
+  <MessageClass Name="Message" Label="消息" Option="显示提供相关信息的消息" />
+  <MessageClass Name="Warning" Label="警告" Option="显示警告" />
+  <MessageClass Name="Error" Label="错误" Option="显示错误" />
+  <MessageClass Name="Property" Label="属性" Option="显示元数据" />
+  <MessageClass Name="Diagnostic" Label="消息" Option="显示诊断消息" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="High" Text="已启动代码生成或文本转换。" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="名称 = ClassTemplate" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="ProjectPath = ..\UMLTestLib\UMLTestLib.csproj" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-07-10T16:22:24" Importance="Medium" Text="UMLTest 的文本模板绑定: “ClassTemplate”会将 ClassTemplate.t4 应用于: “UMLTest::Caculator”-  (Class), “UMLTest::AddCaculator”-  (Class), “UMLTest::SubCaculator”-  (Class), “UMLTest::MulCaculator”-  (Class), “UMLTest::DivCaculator”-  (Class) " />
+  <Message Timestamp="2017-07-10T16:22:25" Importance="Medium" Text="“UMLTest::Caculator”-  (Class) : 成功(已替换文件) - F:\工程\设计模式实例\工厂模式\FactoryMehtodTest\UMLTestLib\GeneratedCode\Caculator.cs" />
+  <Message Timestamp="2017-07-10T16:22:25" Importance="Medium" Text="“UMLTest::AddCaculator”-  (Class) : 成功(已替换文件) - F:\工程\设计模式实例\工厂模式\FactoryMehtodTest\UMLTestLib\GeneratedCode\AddCaculator.cs" />
+  <Message Timestamp="2017-07-10T16:22:25" Importance="Medium" Text="“UMLTest::SubCaculator”-  (Class) : 成功(已替换文件) - F:\工程\设计模式实例\工厂模式\FactoryMehtodTest\UMLTestLib\GeneratedCode\SubCaculator.cs" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Medium" Text="“UMLTest::MulCaculator”-  (Class) : 成功(已替换文件) - F:\工程\设计模式实例\工厂模式\FactoryMehtodTest\UMLTestLib\GeneratedCode\MulCaculator.cs" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Medium" Text="“UMLTest::DivCaculator”-  (Class) : 成功(已替换文件) - F:\工程\设计模式实例\工厂模式\FactoryMehtodTest\UMLTestLib\GeneratedCode\DivCaculator.cs" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="名称 = StructTemplate" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="覆盖 = True" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="ProjectPath = ..\UMLTestLib\UMLTestLib.csproj" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Medium" Text="UMLTest 的文本模板绑定: “StructTemplate”会将 StructTemplate.t4 应用于: “UMLTest::Caculator”-  (Class), “UMLTest::AddCaculator”-  (Class), “UMLTest::SubCaculator”-  (Class), “UMLTest::MulCaculator”-  (Class), “UMLTest::DivCaculator”-  (Class) " />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="“UMLTest::Caculator”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="“UMLTest::AddCaculator”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="“UMLTest::SubCaculator”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="“UMLTest::MulCaculator”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-07-10T16:22:26" Importance="Diagnostic" Text="“UMLTest::DivCaculator”-  (Class):  没有生成任何文件，因为模板“StructTemplate.t4”的“AppliesToElement”方法的计算结果为 false。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="Diagnostic" Text="选定内容包含未绑定到模板的 4 元素。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="Diagnostic" Text="“8384da46-6bdc-429b-bdf0-3562500c1774”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="Diagnostic" Text="“9935cd1c-270f-4882-a34e-abc71f541c29”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="Diagnostic" Text="“284f9e6c-f871-4ab9-8f8b-26da25bf52d0”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="Diagnostic" Text="“59a1b075-c37b-4521-a0b9-2c3d6058cd47”-  (Generalization):  没有绑定的模板。" />
+  <Message Timestamp="2017-07-10T16:22:27" Importance="High" Text="代码生成完成。错误:  0。警告:  0。" />
+</Log>
