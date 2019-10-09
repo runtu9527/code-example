@@ -14,7 +14,7 @@ namespace SQLiteOperate
     public class SQLiteDBHelper
     {
 
-        public static readonly string ConnectionString = "Data Source=" + System.AppDomain.CurrentDomain.BaseDirectory + @"\SpliceControlMgr.db";
+        //public static readonly string ConnectionString = "Data Source=" + System.AppDomain.CurrentDomain.BaseDirectory + @"\SpliceControlMgr.db";
         private string connectionString = string.Empty;
         /// <summary>  
         /// 构造函数  
@@ -35,43 +35,37 @@ namespace SQLiteOperate
         }
 
         /// <summary>
-        /// 
-        /// </summary>
-        public SQLiteDBHelper()
-        {
-            this.connectionString = ConnectionString;
-        }
-
-        /// <summary>
         /// 创建数据库
         /// </summary>
         /// <param name="dbPath">数据库路径</param>
-        public void CreateTable(string dbPath)
+        public void CreateDb(string dbPath)
         {
             //如果不存在改数据库文件，则创建该数据库文件  
             if (!System.IO.File.Exists(dbPath))
             {
-                SQLiteConnection.CreateFile(dbPath + dbPath.Substring(dbPath.LastIndexOf("\\")) + ".db");
+                SQLiteConnection.CreateFile(dbPath);
             }
         }
-        /// <summary>  
-        /// 创建SQLite数据库文件
-        /// </summary>  
-        /// <param name="dbPath">要创建的SQLite数据库文件路径</param>  
-        /// <param name="sql">创建表的sql</param>    
-        public void CreateDB(string dbPath, string strSqlite)
+
+        /// <summary>
+        /// 创建表
+        /// </summary>
+        /// <param name="dbPath">指定数据库文件</param>
+        /// <param name="tableName">表名称</param>
+        public void CreateTable(string sql)
         {
-            //using (SQLiteConnection connection = new SQLiteConnection(dbPath + dbPath.Substring(dbPath.LastIndexOf("\\")) + ".db"))  
-            //{  
-            //    connection.Open();  
-            //    using (SQLiteCommand command = new SQLiteCommand(connection))  
-            //    {
-            //        command.CommandText = strSqlite;
-            SQLiteDBHelper db = new SQLiteDBHelper(dbPath + dbPath.Substring(dbPath.LastIndexOf("\\")) + ".db");
-            db.ExecuteNonQuery(strSqlite, null);
-            //}  
-            //}  
+            SQLiteConnection sqliteConn = new SQLiteConnection(this.GetConnectionString());
+            if (sqliteConn.State != System.Data.ConnectionState.Open)
+            {
+                sqliteConn.Open();
+                SQLiteCommand cmd = new SQLiteCommand();
+                cmd.Connection = sqliteConn;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+            }
+            sqliteConn.Close();
         }
+
         /// <summary>  
         /// 对SQLite数据库执行增删改操作，返回受影响的行数。  
         /// </summary>  
